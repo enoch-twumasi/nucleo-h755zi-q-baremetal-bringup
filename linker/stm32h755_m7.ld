@@ -81,14 +81,14 @@ SECTIONS
     */
     .ARM.extab : ALIGN(4)
     {
-        *(ARM.extab*)
+        *(.ARM.extab*)
     } > FLASH
 
     .ARM.exidx : ALIGN(4)
     {
         __exidx_start = .;
 
-        *(ARM.exidx*)
+        *(.ARM.exidx*)
 
         __exidx_end = .;
     } > FLASH
